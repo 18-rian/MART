@@ -3,7 +3,7 @@
 	//Conectar com o software de banco de dados
 	//MySQL
 	
-	$conexao = mysqli_connect("localhost", "root", "");
+	$conexao = mysqli_connect("db4free.net:3306", "jarvis_ifsp", "rn123456789");
 
 	if(!$conexao)
 	{
@@ -15,7 +15,7 @@
 	
 	
 	//selecionando a base de dados
-	$db = mysqli_select_db($conexao, "mart_banco_new");
+	$db = mysqli_select_db($conexao, "marteven");
 	
 	if(!$db)
 	{
